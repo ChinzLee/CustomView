@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="green">#9ACD32</color>
+    <color name="red">#DC143C</color>
+    <color name="white">#ffffff</color>
+
+    <color name="dark_blue">#1a93c0</color>  <!--深蓝-->
+    <color name="blue">#00acf1</color>
+    <color name="yellow">#f2c400</color>
+    <color name="purple">#ca22d6</color>
+    <color name="blueviolet">#8A2BE2</color> <!--蓝紫罗兰-->
+    <color name="darkorange">#FF8C00</color> <!--深橙色-->
+
+    <color name="anhei">#2f2f2f</color>
+    <color name="black">#FF000000</color>
+    <color name="green_darker">#66CD00</color>
+
+    <!--三种灰色字体颜色-->
+    <color name="gray_txt_color_1">#323232</color> <!--最深-->
+    <color name="gray_txt_color_2">#727272</color> <!--其次-->
+    <color name="gray_txt_color_3">#b8b8b8</color> <!--最浅-->
+    <color name="gray_color_999999">#999999</color>
+    <color name="gray_text_color">#1d1e21</color>
+
+    <color name="view_color">#e6e6e6</color>  <!--线条的颜色-->
+    <color name="view_color_2">#eaeced</color> <!--分割部分的颜色-->
+
+    <!--   <color name="gray_txt_color">#727272</color>
+       <color name="black_txt_color">#323232</color>
+   -->
+    <color name="view_grey_bg">#1e846c6c</color><!--灰色背景-->
+    <!-- 销售中心页面 -->
+    <color name="myAgent">#f4613d</color>
+    <color name="newAgent">#1a93c0</color>
+    <color name="todayTrade">#3fbb64</color>
+    <color name="buleLine">#00acf1</color>
+    <color name="greenLine">#3fbb65</color>
+
+    <!-- 右上角按钮文字颜色 -->
+    <color name="btn_grey">#747474</color><!-- 重置、取消、筛选、编辑 -->
+    <color name="btn_blue">#00acf1</color><!-- 查询、确定、完成、保存 -->
+    <color name="btn_green">#3fbb65</color><!-- 说明、添加 -->
+    <color name="btn_red">#f34e4a</color><!-- 全选、汇总 -->
+
+    <!--安全键盘-->
+    <color name="keyboard_line_color1">@color/white</color>
+    <color name="keyboard_line_color_white">#ffffffff</color>
+    <color name="keyborad_normal">#e4e4e4</color>
+    <color name="keyborad_pressed">#a4a4a4</color>
+    <color name="keyboard_pwd_line_color">#ffedebeb</color>
+    <color name="keyboard_pwd_line_color_white">#ffffffff</color>
+    <color name="keyborad_pwd_pressed">#fff2f1f1</color>
+
+
+    <!--add by zhuangzeqin 2017年4月12日17:18:14 统一定义 -->
+    <!--统一蓝色 -->
+    <color name="unify_blue">#3da0f0</color>
+    <color name="unify_blue_heigh">#2891E6</color>
+    <color name="unify_line_bg">#eeeeee</color>
+    <color name="unify_line_9fcff7">#9fcff7</color>
+    <!-- 字体颜色-->
+    <color name="unify_txt_color_black">#323232</color>
+    <color name="unify_txt_color_gray">#909090</color>
+    <color name="unify_txt_color_light_gray">#b8b8b8</color>
+    <color name="unify_txt_color_black4949">#494949</color>
+    <color name="unify_txt_color_blacka6a6a6">#a6a6a6</color>
+    <color name="unify_txt_color_blackaD2E5FB">#D2E5FB</color>
+    <color name="unify_txt_color_blacka9ac4f1">#9ac4f1</color>
+    <color name="unify_txt_color_blackac2ddf9">#c2ddf9</color>
+    <color name="unify_txt_color_73b5f3">#73b5f3</color>
+    <!-- 描边的颜色 -->
+    <color name="unify_stroke_color">#e5e5e5</color>
+    <!-- 按钮点击颜色 -->
+    <color name="unify_btn_normal">#3da0f0</color>
+    <color name="unify_btn_pressed">#2d98ef</color>
+    <!--底色 -->
+    <color name="unify_grounding_gray">#eaeced</color>
+    <color name="unify_grounding_white">#ffffff</color>
+    <color name="unify_grounding_e5e7e9">#E5E7E9</color>
+    <!-- 我的商户 -->
+    <color name="unify_mybis">#E9AE46</color>
+    <color name="unify_new_mybis">#E87058</color>
+    <color name="unify_mybis_msg">#fbf0e2</color>
+    <color name="unify_tv_newBis_msg">#F8DBD6</color>
+    <!--add by zhuangzeqin end -->
+
+    <color name="into_edittext_color">#585858</color>
+
+    <color name="titlebar_normal_textColor">@color/white</color>
+    <color name="titlebar_hold_textColor">#f9f9f9</color>
+
+    <color name="dialog_title_textColor">#1d1e21</color>
+    <color name="dialog_message_textColor">#999999</color>
+    <color name="dialog_line_bg_Color">@color/style_color</color>
+    <color name="dialog_loading_textColor">@color/anhei</color>
+    <color name="dialog_btn_normal_textColor">@color/style_color</color>
+    <color name="dialog_btn_hold_textColor">@color/style_color</color>
+    <color name="dialog_btn_normal_bg">@color/white</color>
+    <color name="dialog_btn_hold_bg">#f1f1f1</color>
+    <color name="dialog_listview_item_textColor">@color/anhei</color>
+
+
+    <color name="style_color">#1f3853</color>
+
+    <color name="left_text_color">#999999</color>
+    <color name="right_text_color">#585858</color>
+    <color name="lrt_textColor">#323232</color>
+    <color name="lrt_grey">#727272</color>
+
+    <color name="gray_text_color_2">#1d1e2e</color>
+    <color name="red_2">#ee4040</color>
+    <color name="color_333333">#333333</color>
+
+    <color name="horizontal_item_bg_pre">#999999</color>
+
+    <!--主题按钮或者字体颜色：盛钱包为蓝色-->
+    <color name="style_btn_color_nor">#23ac38</color>
+    <color name="style_btn_color_pre">#91d59b</color>
+
+    <color name="brown_color_D2AC6F">#D2AC6F</color>
+    <color name="brown_color_FAE7C7">#FAE7C7</color>
+    <color name="brown_color_D3AF73">#D3AF73</color>
+    <color name="brown_color_E1C89F">#E1C89F</color>
+
+    <color name="blue_color_0D83FF">#0D83FF</color>
+    <color name="color_0D83FF">#0D83FF</color>
+    <color name="color_DCDFE8">#DCDFE8</color>
+    <color name="color_9197A6">#9197A6</color>
+    <color name="color_499FF9">#499FF9</color>
+    <color name="color_529BFF">#529BFF</color>
+    <color name="color_F1F8FF">#F1F8FF</color>
+    <color name="color_E9EDF5">#E9EDF5</color>
+    <color name="color_E6C69A">#E6C69A</color>
+</resources>

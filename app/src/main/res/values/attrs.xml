@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BroLineChart">
+        <attr name="showGrid" format="boolean" />
+        <attr name="broLineColor" format="reference|color" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="xTextColor" format="reference|color" />
+        <attr name="yTextColor" format="reference|color" />
+        <attr name="asixColor" format="reference|color" />
+        <attr name="valueTextColor" format="reference|color" />
+        <attr name="pointColor" format="reference|color" />
+        <attr name="girdColor" format="reference|color" />
+        <attr name="shaderColor" format="reference|color" />
+        <attr name="xLabel" format="string" />
+        <attr name="yLabel" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundRelativeLayout">
+        <attr name="rlRadius" format="dimension" />
+        <attr name="rlClipBackground" format="boolean" />
+    </declare-styleable>
+</resources>

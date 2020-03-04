@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="itemName">
+        <item>ArcProgressBar</item>
+        <item>PointLineView</item>
+        <item>CameraActivtiy</item>
+        <item>Start Another APP</item>
+        <item>Float Window</item>
+        <item>WaveView</item>
+        <item>HandWritingView</item>
+        <item>CoverFlowView</item>
+        <item>RoundRelativeLayout</item>
+        <item>BroLine</item>
+        <item>BubbleView</item>
+        <item>Test</item>
+        <item>WebView</item>
+    </string-array>
+
+</resources>
