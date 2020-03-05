@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <declare-styleable name="TitleBar">
+        <attr name="titleBarBg" format="color"></attr>
+        <attr name="showRight" format="boolean"></attr>
+        <attr name="showSecondRight" format="boolean"></attr>
+        <attr name="showLeft" format="boolean"></attr>
+        <attr name="centerTitle" format="reference|string"></attr>
+        <attr name="rightTitle" format="reference|string"></attr>
+        <attr name="leftDrawable" format="reference|integer"></attr>
+        <attr name="rightDrawable" format="reference|integer"></attr>
+        <attr name="secondrightDrawable" format="reference|integer"></attr>
+    </declare-styleable>
 
     <declare-styleable name="BroLineChart">
         <attr name="showGrid" format="boolean" />

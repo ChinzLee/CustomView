@@ -21,12 +21,14 @@ public abstract class BaseActivity extends FragmentActivity {
     protected Activity mContext;
     protected CustomDialog progressDialog;
     private boolean cancelable = true;//返回键是否可以隐藏菊花  默认为true
+    protected Intent intent;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
+        intent = getIntent();
         mContext = this;
         initView();
         initEvent();

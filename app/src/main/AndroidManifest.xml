@@ -42,7 +42,8 @@
         <activity android:name=".BroLineAct" />
         <activity android:name=".BubbleActivity" />
         <activity android:name=".TestActivity" />
-        <activity android:name=".WebViewActivity"/>
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".KotlinDemoActivity" />
 
         <service android:name="com.eeepay.service.FloatService" />
     </application>

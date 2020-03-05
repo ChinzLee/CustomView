@@ -7,6 +7,9 @@
     <color name="red">#DC143C</color>
     <color name="white">#ffffff</color>
 
+    <!--titleBar颜色-->
+    <color name="titlebar_bg_color">#e11229</color>
+
     <color name="dark_blue">#1a93c0</color>  <!--深蓝-->
     <color name="blue">#00acf1</color>
     <color name="yellow">#f2c400</color>

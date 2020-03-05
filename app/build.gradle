@@ -1,29 +1,51 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies{
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
 android {
     compileSdkVersion 25
-    buildToolsVersion '27.0.3'
 
     aaptOptions {
         cruncherEnabled = false
         useNewCruncher = false
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
     defaultConfig {
         applicationId "com.eeepay.activity"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets{
+        main.java.srcDirs+='src/main/kotlin'
+    }
 }
+
+
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -38,4 +60,7 @@ dependencies {
 
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
+

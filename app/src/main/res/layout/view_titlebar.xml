@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bg"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/rlayout_right"
+        android:layout_toRightOf="@+id/tv_back"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/color_333333"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/rlayout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:orientation="horizontal">
+        <!-- add by zhuangzeqin 2017年12月19日16:22:18 新增客服图标 -->
+        <TextView
+            android:id="@+id/tv_rightsecond"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:drawablePadding="-1dp"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:drawablePadding="-1dp"
+            android:gravity="center|left"
+            android:minWidth="40dp"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

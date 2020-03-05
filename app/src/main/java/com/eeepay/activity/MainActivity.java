@@ -81,6 +81,9 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
             case 12:
                 goActivity(WebViewActivity.class);
                 break;
+            case 13:
+                goActivity(KotlinDemoActivity.class);
+                break;
         }
     }
 }

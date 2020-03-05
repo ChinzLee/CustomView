@@ -15,6 +15,7 @@
         <item>BubbleView</item>
         <item>Test</item>
         <item>WebView</item>
+        <item>kotlin</item>
     </string-array>
 
 </resources>
