@@ -1,6 +1,6 @@
 package com.eeepay.activity
 
-import android.widget.TextView
+import com.eeepay.adapter.KotlinGridViewAdapter
 
 /**
  * 描述：Kotlin
@@ -11,18 +11,34 @@ import android.widget.TextView
  */
 class KotlinDemoActivity : BaseActivity() {
 
-    var textView: TextView? = null;
+    var adapter : KotlinGridViewAdapter? = null
+
+    var clickCount: Int = 0
+    var showText = "Kotlin is ok!!!"
 
     override fun getLayoutId(): Int {
-        return R.layout.activity_kotlin;
+        return R.layout.activity_kotlin
     }
 
     override fun initView() {
-        textView = getViewById(R.id.textview);
-        textView?.text ="Kotlin Demo";
+        adapter = KotlinGridViewAdapter(this)
     }
 
     override fun initEvent() {
+//        tv_onclick?.setOnClickListener {
+//            showText = when (clickCount) {
+//                0 -> "start"
+//                1 -> "1"
+//                2 -> "2"
+//                3 -> "3"
+//                4 -> "4"
+//                5 -> "5"
+//                else -> "stop"
+//            }
+//            ToastUtils.showToast(this, showText)
+//            clickCount++
+//        }
+
     }
 
 
