@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
 buildscript {
     repositories {
         jcenter()
     }
 
-    dependencies{
+    dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -40,11 +40,10 @@ android {
         }
     }
 
-    sourceSets{
-        main.java.srcDirs+='src/main/kotlin'
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
     }
 }
-
 
 
 dependencies {
@@ -59,7 +58,7 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:25.3.1'
 
     implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    kapt 'com.jakewharton:butterknife-compiler:8.8.1'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }

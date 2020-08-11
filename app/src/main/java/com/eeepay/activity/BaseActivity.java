@@ -41,12 +41,12 @@ public abstract class BaseActivity extends FragmentActivity {
     protected abstract int getLayoutId();
 
     /**
-     *
+     * 初始化控件
      */
     protected abstract void initView();
 
     /**
-     *
+     * 初始化事件
      */
     protected abstract void initEvent();
 

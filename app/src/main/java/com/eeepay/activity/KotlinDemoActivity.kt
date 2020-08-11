@@ -1,6 +1,12 @@
 package com.eeepay.activity
 
+import android.widget.GridView
+import butterknife.BindView
+import butterknife.BindViews
 import com.eeepay.adapter.KotlinGridViewAdapter
+import com.eeepay.model.ItemInfo
+import com.eeepay.utils.ToastUtils
+import kotlinx.android.synthetic.main.activity_kotlin.*
 
 /**
  * 描述：Kotlin
@@ -11,10 +17,11 @@ import com.eeepay.adapter.KotlinGridViewAdapter
  */
 class KotlinDemoActivity : BaseActivity() {
 
-    var adapter : KotlinGridViewAdapter? = null
+    var adapter: KotlinGridViewAdapter? = null
 
     var clickCount: Int = 0
     var showText = "Kotlin is ok!!!"
+    var datas: MutableList<ItemInfo> = ArrayList();
 
     override fun getLayoutId(): Int {
         return R.layout.activity_kotlin
@@ -22,6 +29,12 @@ class KotlinDemoActivity : BaseActivity() {
 
     override fun initView() {
         adapter = KotlinGridViewAdapter(this)
+        for (index in 1..10) {
+            var itemText: ItemInfo = ItemInfo("阿言" + index + "号") ;
+            datas.add(itemText);
+        }
+        adapter!!.setList(datas);
+        gridView.adapter = adapter;
     }
 
     override fun initEvent() {
@@ -38,7 +51,6 @@ class KotlinDemoActivity : BaseActivity() {
 //            ToastUtils.showToast(this, showText)
 //            clickCount++
 //        }
-
     }
 
 
