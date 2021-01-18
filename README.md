@@ -1,2 +1,2 @@
-# chinz
+# CustomView
 my demo project
