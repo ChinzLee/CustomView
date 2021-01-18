@@ -1,11 +1,7 @@
 package com.eeepay.activity
 
-import android.widget.GridView
-import butterknife.BindView
-import butterknife.BindViews
 import com.eeepay.adapter.KotlinGridViewAdapter
 import com.eeepay.model.ItemInfo
-import com.eeepay.utils.ToastUtils
 import kotlinx.android.synthetic.main.activity_kotlin.*
 
 /**
@@ -30,7 +26,7 @@ class KotlinDemoActivity : BaseActivity() {
     override fun initView() {
         adapter = KotlinGridViewAdapter(this)
         for (index in 1..10) {
-            var itemText: ItemInfo = ItemInfo("阿言" + index + "号") ;
+            var itemText: ItemInfo = ItemInfo("阿言" + index + "号");
             datas.add(itemText);
         }
         adapter!!.setList(datas);
@@ -51,6 +47,10 @@ class KotlinDemoActivity : BaseActivity() {
 //            ToastUtils.showToast(this, showText)
 //            clickCount++
 //        }
+        gridView.setOnItemClickListener { _, _, position, _ ->
+            var content: String = datas[position].text
+            showToast("点击了$content")
+        }
     }
 
 

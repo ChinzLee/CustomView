@@ -14,4 +14,8 @@ class ItemInfo {
     constructor(text: String) {
         this.text = text
     }
+
+    fun get() : String{
+        return this.text;
+    }
 }
