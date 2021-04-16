@@ -13,11 +13,28 @@
         app:centerTitle="Kotlin"
         app:titleBarBg="@color/color_499FF9" />
 
-    <GridView
-        android:id="@+id/gridView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/green"
-        android:numColumns="4" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="5ds4f6a"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="5ds4f6a"
+        android:textColor="@color/blue_color_0D83FF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

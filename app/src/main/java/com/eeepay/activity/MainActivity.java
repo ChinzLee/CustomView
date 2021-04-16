@@ -41,47 +41,47 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        switch (position) {
-            case 0:
+        switch (itemArrays[position]) {
+            case "ArcProgressBar":
                 goActivity(ArcProBarActivity.class);
                 break;
-            case 1:
+            case "PointLineView":
                 goActivity(PoiLineActivity.class);
                 break;
-            case 2:
-                goActivity(CameraActivtiy.class);
-                break;
-            case 3:
-                goActivity(StartAppActivity.class);
-                break;
-            case 4:
-                goActivity(FloatActivity.class);
-                break;
-            case 5:
+            case "WaveView":
                 goActivity(WaveActivity.class);
                 break;
-            case 6:
+            case "HandWritingView":
                 goActivity(HandWritingActivity.class);
                 break;
-            case 7:
-                goActivity(CoverFlowActivity.class);
-                break;
-            case 8:
+            case "RoundRelativeLayout":
                 goActivity(RoundRlAct.class);
                 break;
-            case 9:
+            case "BroLine":
                 goActivity(BroLineAct.class);
                 break;
-            case 10:
+            case "BubbleView":
                 goActivity(BubbleActivity.class);
                 break;
-            case 11:
-                goActivity(TestActivity.class);
-                break;
-            case 12:
-                goActivity(WebViewActivity.class);
-                break;
-            case 13:
+//            case 7:
+//                goActivity(CoverFlowActivity.class);
+//                break;
+//            case 8:
+//                goActivity(RoundRlAct.class);
+//                break;
+//            case 9:
+//                goActivity(BroLineAct.class);
+//                break;
+//            case 10:
+//                goActivity(BubbleActivity.class);
+//                break;
+//            case 11:
+//                goActivity(TestActivity.class);
+//                break;
+//            case 12:
+//                goActivity(WebViewActivity.class);
+//                break;
+            case "kotlin":
                 goActivity(KotlinDemoActivity.class);
                 break;
         }

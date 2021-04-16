@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
 import android.graphics.Shader;
+import android.os.Looper;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -180,6 +181,7 @@ public class BubbleView extends View {
                         refreshBubbles();
                         postInvalidate();
                     } catch (InterruptedException e) {
+                        Looper.prepare();
                         ToastUtils.showToast(getContext(), "Bubble线程结束");
                         break;
                     }

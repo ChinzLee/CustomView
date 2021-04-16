@@ -17,8 +17,9 @@ import java.util.List;
 public class StartAppActivity extends BaseActivity implements View.OnClickListener {
 
     private Button button1, button2;
-    private String PACKAGE_NAME = "com.eeepay.eeepay_shop_hnyhf";
-    private String ACTIVITY_NAME = "com.eeepay.eeepay_shop.activity.MainActivity";
+    private String PACKAGE_NAME = "com.eeepay.eeepay_v2_hkhb";
+    private String ACTIVITY_NAME = "com.eeepay.eeepay_v2.ui.activity";
+
 
 
     @Override

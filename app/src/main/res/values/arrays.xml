@@ -4,18 +4,19 @@
     <string-array name="itemName">
         <item>ArcProgressBar</item>
         <item>PointLineView</item>
-        <item>CameraActivtiy</item>
-        <item>Start Another APP</item>
-        <item>Float Window</item>
+        <item>BroLine</item>
         <item>WaveView</item>
         <item>HandWritingView</item>
-        <item>CoverFlowView</item>
         <item>RoundRelativeLayout</item>
-        <item>BroLine</item>
         <item>BubbleView</item>
-        <item>Test</item>
-        <item>WebView</item>
         <item>kotlin</item>
+        <!--        <item>CameraActivtiy</item>-->
+        <!--        <item>Start Another APP</item>-->
+        <!--        <item>Float Window</item>-->
+        <!--        <item>CoverFlowView</item>-->
+        <!--        <item>Test</item>-->
+        <!--        <item>WebView</item>-->
+
     </string-array>
 
 </resources>

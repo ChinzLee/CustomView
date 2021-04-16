@@ -12,6 +12,9 @@ import com.eeepay.utils.AppManager;
 import com.eeepay.utils.DialogUtil;
 import com.eeepay.view.CustomDialog;
 
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+
 /**
  * Created by Ching on 2017/8/building.
  */
@@ -23,6 +26,7 @@ public abstract class BaseActivity extends FragmentActivity {
     private boolean cancelable = true;//返回键是否可以隐藏菊花  默认为true
     protected Intent intent;
 
+    private Unbinder unbinder;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,7 @@ public abstract class BaseActivity extends FragmentActivity {
         mContext = this;
         initView();
         initEvent();
+        unbinder = ButterKnife.bind(this);
         AppManager.getAppManager().addActivity(this);
     }
 
@@ -120,6 +125,7 @@ public abstract class BaseActivity extends FragmentActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        unbinder.unbind();
         AppManager.getAppManager().finishActivity(this);
     }
 }
